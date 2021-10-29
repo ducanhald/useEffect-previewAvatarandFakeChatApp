@@ -1,5 +1,6 @@
 import { useState } from "react";
-import PreviewAvatar from "./PreviewAvatar";
+// import PreviewAvatar from "./PreviewAvatar";
+import Content from "./Content";
 function App() {
   const [state, setState] = useState(false);
   const handle = () => {
@@ -7,7 +8,8 @@ function App() {
   };
   return (
     <div style={{ padding: 20 }}>
-      {state && <PreviewAvatar />}
+      {/* {state && <PreviewAvatar />} */}
+      {state && <Content />}
       <button onClick={handle}>show</button>
     </div>
   );
